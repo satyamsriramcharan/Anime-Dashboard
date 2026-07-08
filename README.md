@@ -40,4 +40,4 @@ anime-dashboard/
 
 ## 👤 Author
 **Sriram Charan Satyam**  
-[LinkedIn](#) | [GitHub](https://github.com/satyamsriramcharan)
+[LinkedIn](https://www.linkedin.com/in/sriram-charan-satyam-009179309) | [GitHub](https://github.com/satyamsriramcharan)
