@@ -67,7 +67,7 @@ def load_data():
     df = df.dropna(subset=['score', 'year'])
 
     # Filter realistic years
-    df = df[(df['year'] >= 1960) & (df['year'] <= 2024)]
+    df = df[(df['year'] >= 1960) & (df['year'] <= 2020)]
 
     return df
 
@@ -76,7 +76,7 @@ df = load_data()
 # ── Header ────────────────────────────────────────────
 st.markdown('<p class="title-text">🎌 Anime Industry Analytics Dashboard</p>',
             unsafe_allow_html=True)
-st.markdown('<p class="subtitle-text">Exploring trends, ratings, and growth of anime from 1960 to 2024</p>',
+st.markdown(f'<p class="subtitle-text">Exploring trends, ratings, and growth of anime from {int(df["year"].min())} to {int(df["year"].max())}</p>',
             unsafe_allow_html=True)
 st.divider()
 
@@ -99,7 +99,7 @@ year_range = st.sidebar.slider(
     "Select Year Range",
     int(df['year'].min()),
     int(df['year'].max()),
-    (2000, 2024)
+    (2000, int(df['year'].max()))
 )
 min_score = st.sidebar.slider("Minimum Score", 0.0, 10.0, 6.0, 0.1)
 

@@ -1,0 +1,15 @@
+About Project:
+
+Data cleaning   Pandas              Industry standard for data work
+Charts          Plotly              Interactive, modern, free
+Web UI          Streamlit           Fast deployment
+AI Insights     Groq LLaMA3         Adds AI layer
+Data            MyAnimeList(CSV)    Real world dataset
+
+
+I built an anime analytics dashboard using Python and Plotly on a dataset of 18,000+ anime. 
+I used Pandas for data cleaning, Plotly for interactive visualizations, 
+and integrated Groq's LLaMA3 to generate AI-powered industry insights dynamically.
+
+
+I used Pandas to clean 18,000 rows of anime data — extracted years from date strings, handled missing values, and exploded genre lists for accurate counting. I built 5 interactive Plotly charts and integrated Groq LLaMA3 to generate dynamic insights based on calculated statistics from the dataset.
